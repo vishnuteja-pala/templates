@@ -68,11 +68,6 @@
                 ${Employee_Name} has Rescheduled their leave request  from ${start_date} to ${end_date}
             </p>
             <p>Reason :  ${Reason_for_Reschedule}</p>
-            <p>Please click the buttons below to approve or reject the request. </p>
-            <p>
-                <button class="btn approve" >Approve</button>
-                <button class="btn reject">Reject</button>
-            </p>
 
             <p>Thank you for your time and consideration.</p>
             <p>Best regards</p>

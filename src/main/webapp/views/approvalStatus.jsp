@@ -46,7 +46,7 @@
             <div style="margin-top: 30px;">
                 <i style="font-size:14px ;">You are receiving this email from Beesheets:  </i>
                 <a style="font-size:14px ;"
-                   href="#"
+                   href=""
                 >View it on Beesheets</a
                 >
             </div>

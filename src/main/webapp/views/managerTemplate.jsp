@@ -70,11 +70,7 @@
             <p>Hi ,</p>
             <p>You have a new ${leaveType} request from ${employee_name} for  ${number_of_days} days  from ${start_date} to ${end_date} </p>
             <p>Reason :  ${Reason_for_Leave}</p>
-            <p>Please click the buttons below to approve or reject the request. </p>
-            <p>
-                <button class="btn approve" onclick="" >Approve</button>
-                <button class="btn reject">Reject</button>
-            </p>
+
             <p>Thank you for your time and consideration.</p>
             <p>Best regards</p>
 
