@@ -51,6 +51,8 @@ public class Email {
         body.content = messageBody;
         message.body = body;
 
+
+
         LinkedList<Recipient> toRecipientsList = new LinkedList<Recipient>();
         Recipient toRecipients = new Recipient();
         EmailAddress setEmailAddress = new EmailAddress();
@@ -58,6 +60,7 @@ public class Email {
         toRecipients.emailAddress = setEmailAddress;
         toRecipientsList.add(toRecipients);
         message.toRecipients = toRecipientsList;
+
 
 //        LinkedList<Recipient> ccRecipientsList = new LinkedList<Recipient>();
 //        Recipient ccRecipients = new Recipient();
@@ -71,7 +74,7 @@ public class Email {
 
         boolean saveToSentItems = true;
 
-        graphServiceClient().users("kailash.m@beehyv.com")
+        graphServiceClient().users("vishnu.p@beehyv.com")
                 .sendMail(UserSendMailParameterSet
                         .newBuilder()
                         .withMessage(message)

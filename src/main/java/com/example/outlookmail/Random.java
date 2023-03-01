@@ -16,4 +16,8 @@ public class Random implements Runnable{
         ArrayList<String> list = new ArrayList<>();
         email.send("Check",html,"vishnu.p@beehyv.com",list);
     }
+
+    public String leaveType(){
+        return "casual";
+    }
 }

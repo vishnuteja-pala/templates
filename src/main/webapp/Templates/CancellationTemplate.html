@@ -1,9 +1,6 @@
-<%@ page import="com.example.outlookmail.Random" %>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Manager-Template</title>
-
+    <title>Cancellation-Template</title>
     <style>
         body{
             display: block;
@@ -21,46 +18,10 @@
             transition: 0.3s;
         }
 
-        .btn {
-            color: white;
-            border: none;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
-        }
-
-        .approve{
-            border-color: #04AA6D;
-            color: green;
-        }
-
-        .approve:hover {
-            background-color: #04AA6D;
-            color: white;
-        }
-
-        .reject {
-            border-color: #f44336;
-            color: red
-        }
-
-        .reject:hover {
-            background: #f44336;
-            color: white;
-        }
 
     </style>
-
-
 </head>
 <body>
-<% Random random = new Random();
-    String leaveType = random.leaveType();
-    System.out.println("hello"); %>
 <div class="container">
     <div style="width: 100%">
         <div style=" margin-top: 20px; display: flex; justify-content: center">
@@ -73,8 +34,10 @@
         </div>
         <div class="card">
             <p>Hi ,</p>
-            <p>You have a new <%=leaveType%> request from ${employee_name} for  ${number_of_days} days  from ${start_date} to ${end_date} </p>
-            <p>Reason :  ${Reason_for_Leave}</p>
+            <p>
+                ${Employee_Name} has cancelled their leave request  from ${start_date} to ${end_date}
+            </p>
+            <p>Comments :  ${comments}</p>
 
             <p>Thank you for your time and consideration.</p>
             <p>Best regards</p>
@@ -82,7 +45,7 @@
             <div style="margin-top: 30px;">
                 <i style="font-size:14px ;">You are receiving this email from Beesheets:  </i>
                 <a style="font-size:14px ;"
-                   href="http://183.82.96.201:8080/beesheets/"
+                   href="#"
                 >View it on Beesheets</a
                 >
             </div>
